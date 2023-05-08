@@ -46,8 +46,10 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"FreeLance"}
+            detail={
+              "Passionate freelancer helping entrepreneurs and wantrepreneurs with web development projects using MERN stack, Python Django, and cloud technologies."
+            }
           />
         </motion.div>
         {/* second card */}
@@ -59,7 +61,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"Html, Css, JavaScript, React,React-Native,Next.js, Nodejs, Express,MongoDB"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +72,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Training/Teaching"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Passionate about teaching and sharing technology knowledge in MERN stack, Python Django, and cloud technologies."
             }
             color="rgba(252, 166, 31, 0.45)"
           />
