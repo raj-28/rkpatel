@@ -16,6 +16,9 @@ You may also see any lint errors in the console.
 
 ### `yarn test`
 
+𝕃𝕀𝕍𝔼 𝔻𝔼𝕄𝕆 𝕠𝕟: 𝕡𝕒𝕥𝕖𝕝𝕣𝕜.𝕔𝕠𝕞
+
+
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
