@@ -28,10 +28,10 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>RK Patel</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            I'm A certified MERN stack developer with 3 years of experience. MY expertise lies in cloud computing, react Native, and NEXT.js.
+            I am Quick learner, problem solver and dedicated team player. i strive to stay on the forefront of emerging technologies to drive innovation and deliver Value.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
