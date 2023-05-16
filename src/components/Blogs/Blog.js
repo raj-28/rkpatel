@@ -28,7 +28,9 @@ const BlogList = () => {
             {/* <p className="blog-author">By {blog.author}</p> */}
             <p className="blog-date">Published: {blog.pubDate}</p>
             <p className="blog-category">Category: {blog.categories[0]}</p>
-
+            
+              <a href={blog.link}><button>Learn</button></a>
+            
           </div>
         </div>
       ))}
