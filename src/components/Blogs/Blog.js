@@ -6,7 +6,7 @@ const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@masterrajpatel&limit=20").then((response) => {
+    axios.get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@masterrajpatel").then((response) => {
       setBlogs(response.data.items);
     });
   }, []);
@@ -25,8 +25,10 @@ const BlogList = () => {
               <a href={blog.link}>{blog.title}</a>
             </h2>
             {/* <p className="blog-description">{blog.description}</p> */}
-            <p className="blog-author">By {blog.author}</p>
+            {/* <p className="blog-author">By {blog.author}</p> */}
             <p className="blog-date">Published: {blog.pubDate}</p>
+            <p className="blog-category">Category: {blog.categories[0]}</p>
+
           </div>
         </div>
       ))}
