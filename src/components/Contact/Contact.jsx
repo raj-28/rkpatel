@@ -10,24 +10,38 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
-        form.current,
-        "VLwg1ltOWvnCYAiK_"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const sendEmail = (e) => {
+      e.preventDefault();
+    
+      emailjs
+        .sendForm(
+          "service_2mu5xtl",
+          "template_m5udu2c",
+          form.current,
+          "VLwg1ltOWvnCYAiK_",
+          {
+            action: "https://getform.io/f/ea716528-cde7-4a76-b09c-0499d3966325",
+          }
+        )
+        .then(
+          (result) => {
+            if (result.success) {
+              // The form was submitted successfully.
+              setDone(true);
+              form.reset();
+              alert("Thank you for your submission!");
+            } else {
+              // The form was not submitted successfully.
+              console.log(result.errors);
+            }
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    };
   };
+  
 
   return (
     <div className="contact-form" id="contact">
@@ -45,7 +59,7 @@ const Contact = () => {
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
+      <form action="https://getform.io/f/ea716528-cde7-4a76-b09c-0499d3966325" method="POST">
           <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
@@ -56,6 +70,13 @@ const Contact = () => {
             style={{ background: "var(--purple)" }}
           ></div>
         </form>
+        {/* <form action="https://getform.io/f/ea716528-cde7-4a76-b09c-0499d3966325" method="POST">
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="message" />
+  <button type="submit">Send</button>
+</form> */}
+
       </div>
     </div>
   );
