@@ -21,19 +21,15 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Worked for All these
           </span>
           <span>Brands & Clients</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          Fueling success, I've teamed up with top-notch brands and clients. Crafting brilliance and pushing boundaries, 
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            my work stands as a testament to innovation. Join the ranks of those who've experienced the extraordinary.             <br />
             <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </spane>
+            Let's redefine excellence together.          </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>
