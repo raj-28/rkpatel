@@ -6,7 +6,7 @@ const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@masterrajpatel").then((response) => {
+    axios.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2F%40masterrajpatel%2Ffeed").then((response) => {
       setBlogs(response.data.items);
     });
   }, []);
@@ -39,3 +39,7 @@ const BlogList = () => {
 };
 
 export default BlogList;
+
+
+
+
